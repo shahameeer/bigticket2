@@ -35,7 +35,7 @@ router.post('/start', async (req, res) => {
             ORDER_ID: `ORDER_${Date.now()}`,
             CUST_ID: phoneNumber,
             TXN_AMOUNT: (numberOfTickets * 100).toFixed(2), // Example amount
-            CALLBACK_URL: PAYTM_CALLBACK_URL
+            CALLBACK_URL: https://bigticket3.netlify.app//api/payment/callback
         };
 
         params.CHECKSUMHASH = generateChecksum(params);
